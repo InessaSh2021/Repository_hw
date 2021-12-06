@@ -46,6 +46,6 @@ album_id integer not null references Album_list(album_id)
 
 
 
-
+файл с INSERT-запросами находится по ссылке: https://github.com/InessaSh2021/Repository_hw/blob/feature/code-dokumentation/hw4.1.sql
 
 
