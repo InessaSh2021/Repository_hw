@@ -1,4 +1,4 @@
-select album_title, year_of_release from Album_list WHWRE year_of_release = 2018;
+select album_title, year_of_release from Album_list WHERE year_of_release = 2018;
 
 select track_name, track duration from Track_list where track_duration = max ();
 
