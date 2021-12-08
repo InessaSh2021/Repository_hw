@@ -95,7 +95,7 @@ values
 ('hard rock'),
 ('rock'),
 ('sinthpop'),
-('dance musik');
+('dance musik'),
 ('pop');
 
 insert into List_of_collections (collectionstitle)
