@@ -120,4 +120,13 @@ values
 ('2018'),
 ('2019');
 
-
+INSERT INTO CollectionsTrackList (Genres_list, Artist_list)
+VALUES 
+(1, 1),
+(2, 2),
+(3, 5),
+(4, 4),
+(5, 4),
+(6, 5),
+(7, 6),
+(8, 1);
