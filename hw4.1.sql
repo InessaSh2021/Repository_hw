@@ -120,7 +120,7 @@ values
 ('2018'),
 ('2019');
 
-INSERT INTO ArtistsGenre (Artist_list, Genres_list)
+INSERT INTO ArtistsGenre (artist_id, genre_id)
 VALUES 
 (1, 1),
 (2, 2),
