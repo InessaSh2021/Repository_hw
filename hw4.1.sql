@@ -139,6 +139,17 @@ values
 ('2018'),
 ('2019');
 
+INSERT INTO CollectionsTrackList (collections_id, track_id)
+VALUES 
+('1', '9'),
+('2', '10'),
+('3', '3'),
+('4', '12'),
+('5', '5'),
+('6', '14'),
+('7', '15'),
+('8', '8');
+
 INSERT INTO ArtistsGenre (artist_id, genre_id)
 VALUES 
 ('1', '1'),
