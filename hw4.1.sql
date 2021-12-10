@@ -42,6 +42,25 @@ values
 ('2002'),
 ('2001');
 
+insert into Album_list (album_id, track_id)
+values 
+('1, 1'),
+('1, 1'),
+('2, 2'),
+('2, 2'),
+('3, 3'),
+('3, 3'),
+('4, 4'),
+('4, 4'),
+('5, 5'),
+('5, 5'),
+('6, 6'),
+('6, 6'),
+('7, 7'),
+('7, 7'),
+('8, 8')
+('8, 8');
+
 insert into Track_list (track_name1)
 values 
 ('Irthes'),
