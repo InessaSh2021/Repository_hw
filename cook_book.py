@@ -4,7 +4,6 @@ cook_book = {}
 
 with open('recipes.txt', encording='utf-8') as f:
   for line in f:
-    #print(line)
     name = line.strip()
     quantity = int(file.readline().strip())
     ingr_dict = {}
