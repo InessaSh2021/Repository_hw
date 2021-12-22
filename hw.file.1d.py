@@ -29,7 +29,7 @@
 
 from pprint import pprint
 
-with open('recipes.txt') as file:
+with open('recipes.txt', mode='r', encoding='utf-8') as file:
   cook_book = dict()  
   for line in file:
     dishes = line.strip()
