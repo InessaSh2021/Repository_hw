@@ -2,7 +2,7 @@ from pprint import pprint
 
 cook_book = {}
 
-with open('recipes.txt', encording='utf-8') as f:
+with open('recipes.txt', encording='UTF-8') as f:
   for line in f:
     name = line.strip()
     quantity = int(file.readline().strip())
