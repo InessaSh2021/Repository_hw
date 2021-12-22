@@ -30,18 +30,18 @@
 from pprint import pprint
 
 with open('recipes.txt', encording='utf-8') as file:
-        cook_book = dicht()        
+        cook_book = dict()        
         for line in file:
                 dishes = line.strip()
                 counter = int(file.readline().strip())
-                ingr_dicht = dicht()
+                ingr_dict = dict()
                 temp_list = []
                 for ingredients in range(quantity):                        
                         ingr = f.readline().split('|')
-                        ingr_dicht['ingr_name'] = ing[0].strip()
-                        ingr_dicht['quantity'] = ing[1].strip()
-                        ingr_dicht['measure'] = ing[2].strip()
-                        temp_list.append(ingr_dicht)
+                        ingr_dict['ingr_name'] = ing[0].strip()
+                        ingr_dict['quantity'] = ing[1].strip()
+                        ingr_dict['measure'] = ing[2].strip()
+                        temp_list.append(ingr_dict)
                 f.readline()
                 cook_book[dishes] = temp_list          
 
