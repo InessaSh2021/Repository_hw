@@ -37,12 +37,12 @@ with open('recipes.txt', encording='utf-8') as file:
                 ingr_dict = dict()
                 temp_list = []
                 for ingredients in range(quantity):                        
-                        ingr = f.readline().split('|')
+                        ingr = file.readline().split('|')
                         ingr_dict['ingr_name'] = ing[0].strip()
                         ingr_dict['quantity'] = ing[1].strip()
                         ingr_dict['measure'] = ing[2].strip()
                         temp_list.append(ingr_dict)
-                f.readline()
+                file.readline()
                 cook_book[dishes] = temp_list          
 
 pprint(cook_book)
