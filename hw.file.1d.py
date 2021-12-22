@@ -36,7 +36,7 @@ with open('recipes.txt') as file:
     counter = int(file.readline().strip())
     ingr_dict = dict()
     temp_list = []
-    for ingredients in range(quantity):
+    for ingredients in range(counter):
       ingr = file.readline().split('|')
       ingr_dict['ingr_name'] = ingr[0].strip()
       ingr_dict['quantity'] = ingr[1].strip()
