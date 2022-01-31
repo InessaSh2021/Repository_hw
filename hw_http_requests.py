@@ -27,7 +27,7 @@ def getdata(herolist):
     
     for key, values in resultdata.items():
       if values == maximum_intelligence:
-        print('Самый умный герой', key)
+        print('РЎР°РјС‹Р№ СѓРјРЅС‹Р№ РіРµСЂРѕР№', key)
     
   print('intelligence', maximum_intelligence)
 
