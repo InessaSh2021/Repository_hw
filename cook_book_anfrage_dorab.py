@@ -13,9 +13,9 @@ def get_list_dishes(dishes, persons=int):
         else:
           list_dishes[item['ingredient_name']]['quantity'] *= persons
       else:
-        print('Такого блюда нет')
+        print('РўР°РєРѕРіРѕ Р±Р»СЋРґР° РЅРµС‚')
 
-  print('Нужно купить:', list_dishes)
+  print('РќСѓР¶РЅРѕ РєСѓРїРёС‚СЊ:', list_dishes)
   print(list_dishes)
 
-get_list_dishes(['Запеченный картофель', 'Омлет'], 2)
+get_list_dishes(['Р—Р°РїРµС‡РµРЅРЅС‹Р№ РєР°СЂС‚РѕС„РµР»СЊ', 'РћРјР»РµС‚'], 2)
