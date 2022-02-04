@@ -15,7 +15,7 @@ def get_list_dishes(dishes, persons=int):
       else:
         print('Такого блюда нет')
 
-  print('Нужно купить:', list_dishes)
+  print('Нужно купить: ', list_dishes)
   print(list_dishes)
 
 get_list_dishes(['Запеченный картофель', 'Омлет'], 2)
