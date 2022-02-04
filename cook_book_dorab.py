@@ -13,4 +13,4 @@ def cook_book():
             ingredient_name, quantity, measure = map(lambda x: int(x) if x.isdigit() else x, argument.split(' | '))
             temp_list.append({'ingredient_name': ingredient_name, 'quantity': quantity, 'measure': measure})
             ingr_dict[dish] = temp_list        
-    return dish_list, ingr_dict 
+    return ingr_dict 
