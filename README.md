@@ -1,29 +1,4 @@
-*Описание проекта NeuroStartUp:*
-
-## NeuroStartUp — динамически развивающийся стартап, специализирующийся на поиске с использованием новейших технологий искусственного интеллекта. 
-
-## Наши преимущества:
-
-* Высокая точность поиска
-* Высокая скорость поиска
-* Низкая цена
-
-*Логотип:*
-
-![**NeuroStartUp**](https://camo.githubusercontent.com/c6727c717cad1e4820481abb87524f90782445c5/68747470733a2f2f692e696d6775722e636f6d2f495a4f525769492e706e67)
-
-Мы на столько крутые, что уже успели поработать со следующими команиями:
-
-* ООО «Рога и копыта»
-* Издательство «Читый лист»
-* Космопорт «Черезтерновый Кзвёздный»
-* Дизайн-студия имени Слишком Известного Персонажа
-
-Ниже пример кода из нашего приложения:
-
-```
-.selector {
-  font-family: "Awesome", Arial, sans-serif;
-  color: red;
-}
-```
+Базы данных для Python-разработчиков https://drive.google.com/file/d/1YyObLh870cEqdqgAUs-6AkqvVB8nrvzc/view?usp=sharing
+Git - система контроля версий https://drive.google.com/file/d/1Er1LzXsTlfMF6Jc-OtNb1o2wepbpGZkB/view?usp=sharing
+Python-разработка для начинающих https://drive.google.com/file/d/1Rfl4LL0iOmE3DbDNaa_aV6KCz01fV2dQ/view?usp=sharing
+"Поколение Python": курс для начинающих https://drive.google.com/file/d/1-X-8c2nRhjwV8YCbd8qmwyZ_pelbbv0d/view?usp=sharing
