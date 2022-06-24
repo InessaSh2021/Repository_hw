@@ -1,0 +1,75 @@
+import telebot
+import random
+
+token = "2056531902:AAFNvde3hFTNjaYWU8LpP4of8Cw_uqVXXKk"
+
+bot = telebot.TeleBot(token)
+RANDOM_TASKS = ["ЗАПИСАТЬСЯ НА КУРС В НЕТОЛОГИЮ", "НАПИСАТЬ ГВИДО ПИСЬМО", "ПОКОРМИТЬ КОШКУ", "ПОМЫТЬ МАШИНУ"]
+
+HELP = """
+/help - ввести список доступных команд.
+/add - добавить задачу в список (название задачи запрашивается у пользователя.
+/show - напечатать все добавленные задачи
+/random - добавить случайную задачу на дату Сегодня"""
+
+@bot.message_handler(commands=["help"])
+def help(message):
+    bot.send_message(message.chat.id, HELP)
+
+
+@bot.message_handler(commands=["add"])
+def add(message):
+    command = message.text.split(maxsplit=2)
+    date = command[1].lower()
+    task = command[2]
+    add_todo(date, task)
+    if len(task) > 3:
+        text = "Задача " + task + " добавлена на дату "  + date
+    else:
+        text = "В задаче меньше трех букв. Задача " + task + " не добавлена "
+    bot.send_message(message.chat.id, text)
+
+@bot.message_handler(commands=["random", "todo"])
+def random_add(message):
+    date = "Сегодня"
+    task = random.choice(RANDOM_TASKS)
+    add_todo(date, task)
+    if len(task) > 3:
+        text = "Задача " + task + " добавлена на дату "  + date
+    else:
+        text = "В задаче меньше трех букв. Задача " + task + " не добавлена "
+    bot.send_message(message.chat.id, text)
+
+
+
+@bot.message_handler(commands=["show", "print"])
+def show(message):
+    command = message.text.split(maxsplit=1)
+    date = command[1].lower()
+    text = ""
+    if date in tasks:
+        text = date.upper() + "/n"
+        for task in tasks[date]:
+            text = text + "[] " + task + "/n"
+    else:
+        text = "Задач на эту дату нет"
+    bot.send_message(message.chat.id, text)
+
+
+tasks = {}
+
+def add_todo(date, task):
+    if len(task) >= 3:
+        if date in tasks:
+            tasks[date].append(task)
+        else:
+            tasks[date] = []
+            tasks[date].append(task)
+    else:
+        print("Задачи меньше 3 букв не добавляются")
+
+
+bot.polling(none_stop=True)
+
+
+bot.polling(non_stop=True)
