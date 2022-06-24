@@ -1,0 +1,13 @@
+word = input("Введите список слов через пробел ")
+letter = input("Введите букву ")
+def count_letter(letter, word):
+  splitted_string = word.split()
+  x = 0
+ 
+  for word in splitted_string:
+    count = 0 
+    if letter in word:
+      x += 1
+      count += 1     
+  print(f'В данном списке {x} слов(о/а) содержат введенную букву')
+count_letter(letter, word)
